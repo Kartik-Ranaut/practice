@@ -1,7 +1,12 @@
-function Item(){
+// component naming should bee such that first name of letter should be capital
+import './Item.css'
+
+function Item(props){
+    const itemName=props.itemName;
     return(
         <div>
-            <p>My name is Kartik</p>
+            <p className="nirma">{itemName}</p>
+            {props.children}
         </div>
     );
 }
