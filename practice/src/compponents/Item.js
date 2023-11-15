@@ -4,9 +4,15 @@ import './Item.css'
 function Item(props){
     const itemName=props.itemName;
     return(
-        <div>
-            <p className="nirma">{itemName}</p>
-            {props.children}
+        <div className='item'>
+            <div className='date'>
+                <div>{props.month}</div>
+                <div>{props.year}</div>   
+                <div>{props.date}</div>
+            </div>
+            <div className='title'>
+                {props.title}
+            </div>
         </div>
     );
 }

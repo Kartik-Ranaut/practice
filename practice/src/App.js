@@ -1,39 +1,34 @@
 import logo from './logo.svg';
 import './App.css';
-import Item from './compponents/Item'
-import ItemDate from './compponents/ItemDate';
+
+
+import Products from './compponents/products';
 function App() {
   const response=[
     {
       itemName:"Nirma",
-      day:'20',
+      date:'20',
       month:"July",
       year:'1999'
     },
     {
       itemName:"Surfexel",
-      day:'10',
-      month:"may",
+      date:'10',
+      month:"May",
       year:'1899'
     },
     {
       itemName:"Patanjali",
-      day:'24',
-      month:"sept",
+      date:'24',
+      month:"September",
       year:'2000'
     }
     
   ]
   return (
-    <div>
-      <Item itemName='Nirma' >ram ram ji</Item>
-      <ItemDate day='20' month='June' year="1998"></ItemDate>
-      <Item itemName='Surf-Exel'></Item>
-      <ItemDate day='19' month='July' year="1998"></ItemDate>
-      <Item itemName='555'></Item>
-      <ItemDate day='20' month='August' year="1988"></ItemDate>
+    <div className='container'>
       <div className="App">
-        hello ji
+         <Products items={response}></Products>
       </div>
     </div>
   );

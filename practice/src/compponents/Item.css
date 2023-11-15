@@ -1,4 +1,20 @@
-.nirma{
-    text-align: center;
+.item{
     background-color: aqua;
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.date{
+    display: flex;
+    width:80px;
+    flex-direction: column;
+    background-color: black;
+    border: 1px solid aliceblue;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
+.title{
+
 }
