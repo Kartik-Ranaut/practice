@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-
+import NewProducts from './compponents/NewProducts';
 import Products from './compponents/products';
 function App() {
   const response=[
@@ -28,7 +29,8 @@ function App() {
   return (
     <div className='container'>
       <div className="App">
-         <Products items={response}></Products>
+        <NewProducts></NewProducts>
+        <Products items={response}></Products>
       </div>
     </div>
   );
