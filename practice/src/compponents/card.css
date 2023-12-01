@@ -4,4 +4,5 @@
     flex-direction: column;
     justify-content: space-around;
     padding: 15px;
+    gap: 20px;
 }
