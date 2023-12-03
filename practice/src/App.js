@@ -2,7 +2,7 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react';
 
-import NewProducts from './compponents/NewProducts';
+
 import Products from './compponents/products';
 function App() {
   const response=[
