@@ -4,12 +4,23 @@ import React, {useState} from 'react'
 
 function Item(props){
     
-    const [title,setfun]= useState(props.title);
+    let [title,setfun]= useState(props.title);
+    const title1=props.title;
+    let i=0;
     function clickHandler(){
+        console.log(i);
         console.log(title+"Added to cart");
-        setfun('Ramdev')
+        if (i%2==0){
+            i++;
+            setfun('Ramdev');  
+        }
+       else{
+        i++;
+        setfun(title1);
+       }
+       
     }
-    const itemName=props.itemName;
+    
     return(
         <div className='item'>
             <div className='date'>

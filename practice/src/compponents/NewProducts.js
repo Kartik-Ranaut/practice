@@ -1,5 +1,5 @@
 import Form from './Form.js'
-import './NewPRoducts.css'
+import './NewProducts.css'
 function NewProducts(){
     return (
         <div>
