@@ -1,10 +1,13 @@
 function Form(){
+    function titlechangehandler(event){
+        console.log(event.target.value);
+    }
     return(
         <form >
             <div className='new-product_controls'>
                 <div className='new-product_control'>
                     <label>Title</label>
-                    <input type='text' ></input>
+                    <input type='text' onChange={titlechangehandler}></input>
                 </div>
                 <div className='new-product_control'>
                     <label>Date</label>
