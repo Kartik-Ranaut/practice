@@ -1,9 +1,12 @@
 import Form from './Form.js'
 import './NewProducts.css'
-function NewProducts(){
+function NewProducts(props){
+    function incobj(obj){
+        props.objfun(obj)
+    }
     return (
         <div>
-            <Form></Form>
+            <Form objfun={incobj}></Form>
         </div>
     )
 }

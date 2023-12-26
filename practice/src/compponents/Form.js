@@ -1,8 +1,9 @@
 import { useState } from "react";
 
-function Form(){
+function Form(props){
     const [title,setTitle]= useState("");
     const [date,setDate]= useState("");
+  
 
     function titlechangehandler(event){
         setTitle(event.target.value);
@@ -10,8 +11,17 @@ function Form(){
     function dateChangehandle(event){
         setDate(event.target.value);
     }
+
+    function SubmitHandler(event){
+        event.preventDefault();
+        const obj ={
+            itemName:title,
+            date:date
+        }
+        props.objfun(obj)
+    }
     return(
-        <form >
+        <form onSubmit={SubmitHandler}>
             <div className='new-product_controls'>
                 <div className='new-product_control'>
                     <label>Title</label>

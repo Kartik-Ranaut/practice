@@ -5,6 +5,10 @@ import NewProducts from './compponents/NewProducts'
 
 import Products from './compponents/products';
 function App() {
+  function ramu(incobj){
+    response.push(incobj)
+    console.log(response);
+  }
   const response=[
     {
       itemName:"Nirma",
@@ -29,7 +33,7 @@ function App() {
   return (
     <div className='container'>
       <div className="App">
-        <NewProducts></NewProducts>
+        <NewProducts objfun={ramu}></NewProducts>
         <Products items={response}></Products>
       </div>
     </div>
